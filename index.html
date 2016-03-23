@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UFT-8">
+<title>Non-motor features of Parkinson's disease</title>
+</head>
+
+<body>
+<nav>
+  <a href="autonomic.html">Autonomic features</a> |
+</nav> 
+
+
+<section>
+  <h1>Introduction</h1>
+  <p>Parkinson's disease is a systemic disorder. Lewy bodies have been found in the gut of people with Parkinson's disease, with some arguing that is where the pathology of Parkinson's disease begins.</p>
+
+ <input type="text">
+ <input type="text">
+
+<form>
+  <input type="radio" id="rad1" name="Autonomic" value="test1"> Test1<br>
+  <input type="radio" id="rad2" name="Autonomic" value="test2"> Test2<br>
+</section>
+<button type="button" id="button1" onclick="myFunction()">Answer</button>
+
+<script>
+function myFunction() {
+  var a = document.getElementById("rad1");
+  a.checked = true;
+  var x = document.getElementById("button1");
+  x.disabled = true;
+}
+</script>
+
+
+<button type="button" id="button2" onclick="answerFunction()">Answer</button>
+
+<input type="text" id="text1">
+<script>
+function answerFunction(){
+  var x = document.getElementById("text1");
+  x.value = "The answer";
+  x.style.color = "red";
+  var y = document.getElementById("button2");
+  y.disabled = true;
+}
+</script>
+</body>
+
+</html>
